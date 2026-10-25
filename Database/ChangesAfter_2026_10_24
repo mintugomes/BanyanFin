@@ -9,6 +9,4 @@
 8. ALTER Procedure [ad].[AddressBook_Update] 
 9. ALTER proc [ad].[AddressBook_Delete]
 10. ALTER proc [ad].[AddressBook_Get]
-
-
-
+11. CREATE PROCEDURE cl.Client_Search @Token varbinary(256), @SecretKey varchar(100), @Search nvarchar(100), @MaxRows   int = 50
