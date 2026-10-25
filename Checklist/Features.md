@@ -1,8 +1,9 @@
 - [ ] Core: Listing: Banks,Audit event log, Auto ID management, Mobile Financial Services(MFS) Listing, Modules, Parties, Loan policies (business rules), Projects, Inter-Member relations, 
     - [ ] Core: System Control: One line of system operating variables like current business date, day open-close variables, fiscal year starting months etc.
 - [ ] Address
-- [ ] Client: Admission, List
-    - [ ] Subscription types: Individual, Institution
+- [ ] Client: Admission, List, Interactive search
+    - [ ] Subscription types: Saver, Associate Member, Member
+    - [ ] Free text search
 - [ ] Product
     - [ ] Savings Products
         - [ ] Savings Application work flow
