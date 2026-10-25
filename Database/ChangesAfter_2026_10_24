@@ -1,1 +1,18 @@
 1. Table acc.ChequeBook: added columns: ClientAccountID,ClientID,Leaves,BookNumber,IssueDate,Status: Check Constraint,StatusDate,UserID,SetDate
+2. CREATE TABLE fin.Cheques (
+    ID              BIGINT PRIMARY KEY,
+    ChequeBookID  int NOT NULL REFERENCES acc.ChequeBooks(ID),
+    ChequeNumber   VARCHAR(20) NOT NULL,
+    Status          VARCHAR(20) NOT NULL DEFAULT 'Unused',
+    StatusDate smalldatetime,
+    StatusUserID smallint,
+    Amount          DECIMAL(12, 2),
+    ChequeDate     DATE,
+    PresentedDate  smalldatetime,
+    UserID smallint,
+    SetDate smalldatetime,
+
+    UNIQUE (ChequeNumber),
+    CHECK (status IN ('Unused', 'Presented', 'Under Review', 'Approved','Paid','Rejected','Cancelled'))
+);
+
