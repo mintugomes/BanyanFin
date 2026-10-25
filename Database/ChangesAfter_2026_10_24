@@ -1,4 +1,18 @@
 1. Table acc.ChequeBook: added columns: ClientAccountID,ClientID,Leaves,BookNumber,IssueDate,Status: Check Constraint,StatusDate,UserID,SetDate
+CREATE TABLE [acc].[ChequeBooks](
+	[ID] [int] IDENTITY(1,1) NOT NULL primary key,
+	[SavingsAccountID] [int] NOT NULL,
+	[ClientID] [int] NULL,
+	[Leaves] [tinyint] NOT NULL,
+	[BookNumber] [varchar](20) NOT NULL,
+	[StartNumber] [varchar](20) NOT NULL,
+	[EndNumber] [varchar](20) NOT NULL,
+	[IssueDate] [date] NOT NULL,
+	[Status] [varchar](20) NOT NULL,
+	[StatusDate] [date] NOT NULL,
+	[UserID] [smallint] NULL,
+	[SetDate] [smalldatetime] NULL
+)
 2. CREATE TABLE fin.Cheques (
     ID              BIGINT PRIMARY KEY,
     ChequeBookID  int NOT NULL REFERENCES acc.ChequeBooks(ID),
@@ -15,4 +29,20 @@
     UNIQUE (ChequeNumber),
     CHECK (status IN ('Unused', 'Presented', 'Under Review', 'Approved','Paid','Rejected','Cancelled'))
 );
+
+3. Renamed and Transferred schema for table core.TransactionType to fin.SavingsAccountTransactionType
+4. CREATE TABLE [fin].[TransactionsBankInfo](
+	[TransactionID] [bigint] NOT NULL references fin.Transactions(ID),
+	[BankID] [tinyint] NOT NULL references core.Banks(ID),
+	[MICRNumber] [varchar](35) NOT NULL,
+	[RoutingNumber] [varchar](9) NULL,
+	[Status] varchar(10) not null check(Status in ('Received','ClearingPending','Settled','Bounced','Returned')),
+	[StatusDate] smalldatetime not NULL,
+	StatusUserID smallint not null,
+)
+5. drop table fin.chequestatus
+
+6. acc.JournalSubsidy: renamed to JournalLinSubsidy and dropped column JournalID. Created composit key(JournalLineID, SubsidyAccountID). Also added a column Note varchar(50)
+
+
 
