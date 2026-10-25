@@ -1,0 +1,1 @@
+1. Table acc.ChequeBook: added columns: ClientAccountID,ClientID,Leaves,BookNumber,IssueDate,Status: Check Constraint,StatusDate,UserID,SetDate
