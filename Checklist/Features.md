@@ -1,0 +1,66 @@
+- [ ] Core: Listing: Banks,Audit event log, Auto ID management, Mobile Financial Services(MFS) Listing, Modules, Parties, Loan policies (business rules), Projects, Inter-Member relations, 
+    - [ ] Core: System Control: One line of system operating variables like current business date, day open-close variables, fiscal year starting months etc.
+- [ ] Address
+- [ ] Client: Admission, List
+    - [ ] Subscription types: Individual, Institution
+- [ ] Product
+    - [ ] Savings Products
+        - [ ] Savings Application work flow
+        - [ ] Cumulative Fixed Deposits
+        - [ ] Recurring DepositProducts
+        - [ ] Deposit Accounts
+        - [ ] Savings Products as Guarantee instrument for Loan
+        - [ ] Joint Account
+        - [ ] Loan Products:
+            - [ ] Age wise limits
+            - [ ] External Guarantor Policy
+            - [ ] Loan Product Eligible Guarantee Type
+    - [ ] General Savings Account
+        - [ ] Cheque book inventory
+        - [ ] Cheque tracking
+
+    - [ ] Share Account
+- [ ] Client Accounts: Client wise product management
+- [ ] Accounting: Chart of accounts
+    - [ ] Journal posting
+    - [ ] Subsidy accounts
+    - [ ] Period: Day/Month/Year Open/close
+    - [ ] Cash Denomination
+    - [ ] Cheque Book: Issue, Clearing, Inventory
+- [ ] Loan
+    - [ ] Loan purposes
+    - [ ] Loan Classification
+    - [ ] Application Workflow:
+        - [ ] Employee Roles on application
+        - [ ] Review, investigatioin
+        - [ ] Decision
+        - [ ] Loan Sanction and Disbursement
+        - [ ] Loan Account Creation
+    - [ ] Guarantor
+- [ ] Transactions
+    - [ ] All kinds of financial transaction gateway
+    - [ ] Client's Account transactions
+    - [ ] Collection Slip/Sheet
+    - [ ] Collection Slip Distribution
+    - [ ] Custom Voucher Type: User defined voucher types/Event driven journals
+    - [ ] Journal Posting
+    - [ ] Ledger Balance Update
+    - [ ] Bank transction
+- [ ] Human Resource Management (HR)
+    - [ ] Employee details with
+        - [ ] Departments
+        - [ ] Designation
+        - [ ] Grade/Band
+        - [ ] Jobgrade
+        - [ ] Job Status
+        - [ ] Job Type: Contractual, Regular
+    - [ ] Payroll
+    - [ ] Gratuity
+    - [ ] Provident Fund
+    - [ ]
+- [ ] Security
+
+- [ ] Audit Log/History
+
+
+
