@@ -4,9 +4,26 @@
 3. Renamed and Transferred schema for table core.TransactionType to fin.SavingsAccountTransactionType
 4. CREATE TABLE [fin].[TransactionsBankInfo]
 5. drop table fin.chequestatus
-6. acc.JournalSubsidy: renamed to JournalLinSubsidy and dropped column JournalID. Created composit key(JournalLineID, SubsidyAccountID). Also added a column Note varchar(50)
+6. acc.JournalSubsidy: renamed to JournalLineSubsidy and dropped column JournalID. Created composit key(JournalLineID, SubsidyAccountID). Also added a column Note varchar(50)
 7. ALTER procedure [ad].[AddressBook_Create]
 8. ALTER Procedure [ad].[AddressBook_Update] 
 9. ALTER proc [ad].[AddressBook_Delete]
 10. ALTER proc [ad].[AddressBook_Get]
 11. CREATE PROCEDURE cl.Client_Search @Token varbinary(256), @SecretKey varchar(100), @Search nvarchar(100), @MaxRows   int = 50
+12. Changed table name acc.SubsidyAccounts to acc.SubLedgerAccounts
+13. Changed table name acc.JournalLineSubsidy to acc.JournalLineSubsidyAccounts
+14. Alter table acc.ChartOfAccounts->Changed Column name from SubsidiaryLedger to HasSubLedger bit
+15. Drop table acc.SubLedgerType
+16. drop table acc.SubLedgerAccounts
+17. rename table acc.JournalLineSubsidyAccounts to JournalLineSubLedger
+18. rename core.PartyType to acc.SubLedgerType
+19. rename core.Parties to acc.SubLedger
+20. renamed acc.SubLedger->PartyTypeID to SubLedgerTypeID
+21. Remove the connections of SubLedgerType, Subledger(formerly PartyTypeID, Parties) from from fin.Transactions and reconnect them to JournalLines
+22. fin.Transactions-> Drop columns: PartyTypeID, PartyID
+23. ALTER proc [fin].[CollectionSlip_Distribute]
+24. Acc.JournalLines->Add column HasSubLedger bit
+25. CREATE TYPE [acc].[JournalLineSubLedger]
+26. Drop columns acc.Journal->PartyID
+
+
