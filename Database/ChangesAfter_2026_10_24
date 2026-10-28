@@ -25,5 +25,5 @@
 24. Acc.JournalLines->Add column HasSubLedger bit
 25. CREATE TYPE [acc].[JournalLineSubLedger]
 26. Drop columns acc.Journal->PartyID
-
-
+27. ALTER proc acc.Journal_Create
+28. CREATE TABLE acc.DailyLedgerBalance
