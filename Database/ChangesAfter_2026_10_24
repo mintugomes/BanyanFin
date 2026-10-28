@@ -27,3 +27,7 @@
 26. Drop columns acc.Journal->PartyID
 27. ALTER proc acc.Journal_Create
 28. CREATE TABLE acc.DailyLedgerBalance
+29. CREATE TRIGGER acc.TR_DailyLedgerBalance_AppendOnly ON acc.DailyLedgerBalance
+30.CREATE NONCLUSTERED INDEX IX_DailyLedgerBalance_Account ON acc.DailyLedgerBalance (CoaID, BalanceDate) INCLUDE (OpeningBalance, DebitTotal, CreditTotal, ClosingBalance);
+31. ALTER PROCEDURE acc.DayClose
+
