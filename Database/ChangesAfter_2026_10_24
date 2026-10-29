@@ -28,6 +28,11 @@
 27. ALTER proc acc.Journal_Create
 28. CREATE TABLE acc.DailyLedgerBalance
 29. CREATE TRIGGER acc.TR_DailyLedgerBalance_AppendOnly ON acc.DailyLedgerBalance
-30.CREATE NONCLUSTERED INDEX IX_DailyLedgerBalance_Account ON acc.DailyLedgerBalance (CoaID, BalanceDate) INCLUDE (OpeningBalance, DebitTotal, CreditTotal, ClosingBalance);
+30. CREATE NONCLUSTERED INDEX IX_DailyLedgerBalance_Account ON acc.DailyLedgerBalance (CoaID, BalanceDate) INCLUDE (OpeningBalance, DebitTotal, CreditTotal, ClosingBalance);
 31. ALTER PROCEDURE acc.DayClose
+32. acc.Journal->changed column name: AccountingDate to BusinessDate
+33. ALTER PROCEDURE [acc].[Journal_Create]
+34. ALTER proc [fin].[CollectionSlip_Distribute]
+35. ALTER procedure [fin].[Disbursement_Create]
+36. acc.JournalLines-> New column added DailyLedgerUpdated bit
 
