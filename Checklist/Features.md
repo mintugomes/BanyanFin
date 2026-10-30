@@ -28,6 +28,7 @@
     - [ ] Period: Day/Month/Year Open/close
     - [ ] Cash Denomination
     - [ ] Cheque Book: Issue, Clearing, Inventory
+    - [ ] Daily Ledger Balance - Gets updated at day close
 - [ ] Loan
     - [ ] Loan purposes
     - [ ] Loan Classification
