@@ -35,4 +35,9 @@
 34. ALTER proc [fin].[CollectionSlip_Distribute]
 35. ALTER procedure [fin].[Disbursement_Create]
 36. acc.JournalLines-> New column added DailyLedgerUpdated bit
+37. alter table sav.ChequeBooks: renamed column Leaves->LeafCount, leafStartNo,leavEndNo
+38. CREATE function [cl].[ClientProductID](@ClientAccountID int)
+39. core.SystemControl-> Two columns dropped, Added new column:ChequeBookLeafCount tinyint
+40. ALTER FUNCTION [core].[SystemControlValue]
+
 
