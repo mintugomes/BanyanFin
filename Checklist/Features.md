@@ -18,7 +18,9 @@
             - [ ] Loan Product Eligible Guarantee Type
     - [ ] General Savings Account
         - [ ] Cheque book inventory
-            - [ ] Cheque Book Issue to Clients
+            - [ ] Entry to inventory
+            - [ ] Issue to Clients
+                - [ ] Collect fee
             - [ ] Withdraw from Savings using cheque
             - [ ] Cheque Sequence tracking
                 - [ ] Alert for breaking cheque sequence
