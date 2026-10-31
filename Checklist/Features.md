@@ -18,7 +18,11 @@
             - [ ] Loan Product Eligible Guarantee Type
     - [ ] General Savings Account
         - [ ] Cheque book inventory
-        - [ ] Cheque tracking
+            - [ ] Cheque Book Issue to Clients
+            - [ ] Withdraw from Savings using cheque
+            - [ ] Cheque Sequence tracking
+                - [ ] Alert for breaking cheque sequence
+                - [ ] Mark for lost or destroyed cheques
 
     - [ ] Share Account
 - [ ] Client Accounts: Client wise product management
