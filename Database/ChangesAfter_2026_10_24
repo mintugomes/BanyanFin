@@ -39,5 +39,14 @@
 38. CREATE function [cl].[ClientProductID](@ClientAccountID int)
 39. core.SystemControl-> Two columns dropped, Added new column:ChequeBookLeafCount tinyint
 40. ALTER FUNCTION [core].[SystemControlValue]
+41. ALTER TABLE chq.Cheques->Dropped two columns, StatusUserID, StatusDate
+42. Alter core.SystemControl->Drop Column IsDayOpen, CurrentBatchNumber
+43. Alter acc.DayClose
+44. Alter acc.DayOpen
+45. ALTER FUNCTION [core].[SystemControlValue]
+46. create function core.GetBusinessDate()
+
+
+
 
 
