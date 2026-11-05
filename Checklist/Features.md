@@ -50,6 +50,8 @@
     - [ ] Client's Account transactions
     - [ ] Collection Slip/Sheet
     - [ ] Collection Slip Distribution
+    - [ ] Loan Disbursement
+    - [ ] Withdrawal from Savings Accounts
     - [ ] Custom Voucher Type: User defined voucher types/Event driven journals
     - [ ] Journal Posting
     - [ ] Ledger Balance Update
