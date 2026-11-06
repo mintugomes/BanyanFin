@@ -45,6 +45,11 @@
 44. Alter acc.DayOpen
 45. ALTER FUNCTION [core].[SystemControlValue]
 46. create function core.GetBusinessDate()
+47. create table fin.ClientAccountInterestAccrual, acc.JournalClientAccountInterestAccrual
+48. Immutable triggers for Journal,JournalLines,JournalSubLedger, ClientAccountInterestAccrual,acc.JournalClientAccountInterestAccrual
+49. create procedure fin.ClientAccountInterestGenerator
+50. Alter table cl.ClientAccount->add columns LastInterestAccrualFromDate,LastInterestAccrualToDate,LastInterestAccrualAmount
+
 
 
 
